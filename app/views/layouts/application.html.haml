@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %title Integrate Scheduler
+    %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/
+    = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'week'
+    = stylesheet_link_tag 'calendar'
+    = javascript_include_tag :defaults
+    - if action_name == "new"
+      %script{:src => "/javascripts/calendar_date_select/calendar_date_select.js", :type => "text/javascript"} 
+      %link{:src => "/stylesheets/calendar_date_select/default.css", :media => "screen", :rel => "stylesheet", :type => "text/css"} 
+      
+  %body
+    #base
+      %img{ :src => "/images/base-logo.png" }
+    #content
+      #header
+        #right
+          %img{ :src => "/images/add.png" }
+            #link
+              = link_to "New Event", :controller => "events", :action => "new", :referrer => action_name
+        %h1 
+          = link_to "Scheduler", root_path
+        
+        = link_to "Monthly View", monthly_path
+        |
+        = link_to "Weekly View", weekly_path
+        |
+        = link_to "List View", list_path
+        
+      = yield
+    
+      #footer
+        Powered by
+        = link_to "Scheduler", "http://dmix.ca/scheduler/"
+        |
+        Built by
+        = link_to "Dan McGrady", "http://dmix.ca"

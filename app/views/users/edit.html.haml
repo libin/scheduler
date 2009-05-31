@@ -1,0 +1,14 @@
+%h1 Editing user
+
+= error_messages_for :user
+
+- form_for(@user) do |f|
+  %p
+    %b Name
+    = f.text_field :name 
+    
+  %p= f.submit "Update"
+  
+= link_to 'Show', user_path(@user)
+= link_to 'Back', users_path
+

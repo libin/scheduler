@@ -1,0 +1,35 @@
+#form
+  %h1 Editing event
+  = error_messages_for :event
+
+  - form_for(@event) do |f|
+    %p
+      %b User
+      %br
+      = f.collection_select(:user_id, @users, :id, :name, :include_blank => "- Select User -")
+    %p
+      %b Name
+      %br
+      = f.text_field :name 
+    %p
+      %b Description
+      %br
+      = f.text_area :description 
+    %p
+      %b Estimated time it will take to complete?
+      %br
+      Hours 
+      = f.text_field :hours, :size => 6, :value => "1"
+      Minutes  
+      = f.text_field :minutes, :size => 6, :value => "0"
+
+    %p
+      %b Date to Schedule Event
+      %br
+      = f.datetime_select :starts_at
+    
+    %p= f.submit "Update"
+  
+  = link_to 'Show', event_path(@event)
+  = link_to 'Back', events_path
+

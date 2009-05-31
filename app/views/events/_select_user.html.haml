@@ -1,0 +1,10 @@
+%b Current
+= @user.name
+%br
+%select{ "onchange"=>"window.open(this.options[this.selectedIndex].value,'_top')" }
+  %option
+    = "- Select User -"
+  - for user in @users
+    %option{ "value"=>"/#{action_name}/?user_id=#{user.id}"}
+      = user.name
+      

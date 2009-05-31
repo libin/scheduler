@@ -1,0 +1,31 @@
+#show
+  
+  %h1
+    =h @event.name
+    
+  %p
+    %b User:
+    =h @event.user.name  
+    
+  %p
+    %b Description:
+    =h @event.description 
+
+  %p
+    %b Duration:
+    =h @event.hours 
+    Hours
+    =h @event.minutes 
+    Minutes
+    
+  %p
+    %b Starts at:
+    =h @event.starts_at.strftime("%B %d %I:%M%p")
+
+  %p
+    %b Ends at:
+    =h @event.ends_at.strftime("%B %d %I:%M%p")
+    
+  = link_to 'Edit', edit_event_path(@event)
+  = link_to 'Back', events_path
+

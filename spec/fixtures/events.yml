@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  user_id: 1
+  description: MyText
+  hours: 1
+  minutes: 1
+  starts_at: 2009-05-25 19:15:03
+  ends_at: 2009-05-25 19:15:03
+  day: 1
+  week: 1
+
+two:
+  name: MyString
+  user_id: 1   
+  description: MyText
+  hours: 1
+  minutes: 1
+  starts_at: 2009-05-25 19:15:03
+  ends_at: 2009-05-25 19:15:03
+  day: 1
+  week: 1

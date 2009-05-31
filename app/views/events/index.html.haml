@@ -1,0 +1,21 @@
+#users 
+  = render :partial => "select_index_user"
+#cal
+  %h3
+    = link_to "« Previous Month", "/events?date=#{@last_month.to_s}"
+    = @date.strftime(" %B")
+    = @date.year
+    = link_to " Next Month »", "/events?date=#{@next_month.to_s}"
+
+  - calendar_for(@events, :year => @date.year, :month => @date.month) do |t| 
+    = t.head('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday') 
+    - t.day(:day_method => :starts_at, :valign => "top", :id => "hover") do |day, tasks|
+      .day
+        = day.day
+      - tasks.each do |task|
+        #event
+          = task.starts_at.strftime('%H:%M')
+          = link_to task.name, event_path(task.id)
+
+%center
+  = link_to 'New event', new_event_path 

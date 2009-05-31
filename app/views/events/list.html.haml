@@ -1,0 +1,25 @@
+#users 
+  = render :partial => "select_user"
+%h3
+  = link_to "« Previous Month", "/list?date=#{@last_month.to_s}"
+  = @last_month.strftime("%B %d -")
+  = @next_month.strftime("%B %d")
+  = @date.year
+  = link_to " Next Month »", "/list?date=#{@next_month.to_s}"
+
+- for event in @events
+  #list_event
+    %h3
+      = event.name
+      @
+      =h event.starts_at.strftime("%B %d %I:%M%p")
+      = link_to 'Edit', edit_event_path(event)
+      |
+      = link_to 'Destroy', event_path(event), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+    
+    %p
+      %b Description:
+      =h event.description 
+
+
+= link_to 'New event', new_event_path
