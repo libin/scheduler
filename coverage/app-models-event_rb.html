@@ -156,7 +156,7 @@
       C0 code coverage information
     </h3>
     <p>
-      Generated on Sun May 31 16:09:32 -0400 2009 with 
+      Generated on Sun May 31 19:31:09 -0400 2009 with 
       <a href='http://eigenclass.org/hiki/rcov'>
         rcov 0.8.1.2
       </a>
@@ -174,56 +174,83 @@
     <td class='heading'> Total coverage </td> <td class='heading'> Code coverage
     </td> </tr> </thead> <tbody> <tr class='light'> <td> <a
     href='app-models-event_rb.html'> app/models/event.rb </a> </td> <td
-    class='lines_total'> <tt> 29 </tt> </td> <td class='lines_code'> <tt> 23
+    class='lines_total'> <tt> 45 </tt> </td> <td class='lines_code'> <tt> 39
     </tt> </td> <td> <table cellspacing='0' align='right' cellpadding='0'> <tr>
-    <td> <tt class='coverage_total'> 72.4% </tt> &nbsp; </td> <td> <table
+    <td> <tt class='coverage_total'> 100.0% </tt> &nbsp; </td> <td> <table
     class='percent_graph' cellspacing='0' cellpadding='0' width='100'> <tr> <td
-    class='covered' width='72' /> <td class='uncovered' width='28' /> </tr>
+    class='covered' width='100' /> <td class='uncovered' width='0' /> </tr>
     </table> </td> </tr> </table> </td> <td> <table cellspacing='0'
-    align='right' cellpadding='0'> <tr> <td> <tt class='coverage_code'> 73.9%
+    align='right' cellpadding='0'> <tr> <td> <tt class='coverage_code'> 100.0%
     </tt> &nbsp; </td> <td> <table class='percent_graph' cellspacing='0'
-    cellpadding='0' width='100'> <tr> <td class='covered' width='74' /> <td
-    class='uncovered' width='26' /> </tr> </table> </td> </tr> </table> </td>
+    cellpadding='0' width='100'> <tr> <td class='covered' width='100' /> <td
+    class='uncovered' width='0' /> </tr> </table> </td> </tr> </table> </td>
     </tr> </tbody> </table><pre><span class="marked0"><a name="line1"></a> 1
     class Event &lt; ActiveRecord::Base </span><span class="marked1"><a
-    name="line2"></a> 2 before_validation :set_hours_and_minutes_if_nil
-    </span><span class="marked0"><a name="line3"></a> 3 before_create
-    :calculate_ends_at </span><span class="inferred1"><a name="line4"></a> 4
-    </span><span class="marked0"><a name="line5"></a> 5 validates_presence_of
-    :name, :on =&gt; :create, :message =&gt; &quot;can't be blank&quot;
+    name="line2"></a> 2 belongs_to :user </span><span class="marked0"><a
+    name="line3"></a> 3 before_validation :set_hours_and_minutes_if_nil
+    </span><span class="marked1"><a name="line4"></a> 4 before_create
+    :calculate_ends_at </span><span class="inferred0"><a name="line5"></a> 5
     </span><span class="marked1"><a name="line6"></a> 6 validates_presence_of
+    :user_id, :on =&gt; :create, :message =&gt; &quot;can't be blank&quot;
+    </span><span class="marked0"><a name="line7"></a> 7 validates_presence_of
+    :name, :on =&gt; :create, :message =&gt; &quot;can't be blank&quot;
+    </span><span class="marked1"><a name="line8"></a> 8 validates_presence_of
     :starts_at, :on =&gt; :save, :message =&gt; &quot;invalid. Please select a
-    date.&quot; </span><span class="marked0"><a name="line7"></a> 7
+    date.&quot; </span><span class="marked0"><a name="line9"></a> 9
     validates_presence_of :hours, :on =&gt; :save, :message =&gt; &quot;need to
-    be selected or zero.&quot; </span><span class="marked1"><a name="line8"></a>
-    8 validates_presence_of :minutes, :on =&gt; :save, :message =&gt; &quot;need
-    to be selected or zero.&quot; </span><span class="marked0"><a
-    name="line9"></a> 9 validates_numericality_of :hours, :on =&gt; :save,
-    :message =&gt; &quot;is not a number&quot; </span><span class="marked1"><a
-    name="line10"></a>10 validates_numericality_of :minutes, :on =&gt; :save,
-    :message =&gt; &quot;is not a number&quot; </span><span class="inferred0"><a
-    name="line11"></a>11 </span><span class="marked1"><a name="line12"></a>12
-    named_scope :plot, lambda {|user, start_date, end_date| {:conditions =&gt;
-    ['user_id = ? and starts_at between ? and ?', user, start_date, end_date],
-    :order =&gt; &quot;starts_at ASC&quot;}} </span><span class="inferred0"><a
-    name="line13"></a>13 </span><span class="marked1"><a name="line14"></a>14
-    def set_hours_and_minutes_if_nil </span><span class="marked0"><a
-    name="line15"></a>15 if hours.nil? and minutes.nil? </span><span
-    class="marked1"><a name="line16"></a>16 self.hours = 1 </span><span
-    class="marked0"><a name="line17"></a>17 self.minutes = 0 </span><span
-    class="inferred1"><a name="line18"></a>18 end </span><span
-    class="inferred0"><a name="line19"></a>19 end </span><span
-    class="inferred1"><a name="line20"></a>20 </span><span class="marked0"><a
-    name="line21"></a>21 def calculate_ends_at </span><span
-    class="uncovered1"><a name="line22"></a>22 minutes = hours * 60 </span><span
-    class="uncovered0"><a name="line23"></a>23 time = minutes + minutes
-    </span><span class="uncovered1"><a name="line24"></a>24 self.ends_at =
-    starts_at + time.minutes </span><span class="uncovered0"><a
-    name="line25"></a>25 self.day = starts_at.strftime('%j') </span><span
-    class="uncovered1"><a name="line26"></a>26 end </span><span
-    class="uncovered0"><a name="line27"></a>27 </span><span
-    class="uncovered1"><a name="line28"></a>28 </span><span
-    class="uncovered0"><a name="line29"></a>29 end </span></pre>
+    be selected or zero.&quot; </span><span class="marked1"><a
+    name="line10"></a>10 validates_presence_of :minutes, :on =&gt; :save,
+    :message =&gt; &quot;need to be selected or zero.&quot; </span><span
+    class="marked0"><a name="line11"></a>11 validates_numericality_of :hours,
+    :on =&gt; :save, :message =&gt; &quot;is not a number&quot; </span><span
+    class="marked1"><a name="line12"></a>12 validates_numericality_of :minutes,
+    :on =&gt; :save, :message =&gt; &quot;is not a number&quot; </span><span
+    class="inferred0"><a name="line13"></a>13 </span><span class="marked1"><a
+    name="line14"></a>14 named_scope :plot, lambda {|user, start_date, end_date|
+    {:conditions =&gt; ['user_id = ? and starts_at between ? and ?', user,
+    start_date, end_date], :order =&gt; &quot;starts_at ASC&quot;}} </span><span
+    class="inferred0"><a name="line15"></a>15 </span><span class="marked1"><a
+    name="line16"></a>16 def set_hours_and_minutes_if_nil </span><span
+    class="marked0"><a name="line17"></a>17 if hours.nil? and minutes.nil?
+    </span><span class="marked1"><a name="line18"></a>18 self.hours = 1
+    </span><span class="marked0"><a name="line19"></a>19 self.minutes = 0
+    </span><span class="inferred1"><a name="line20"></a>20 end </span><span
+    class="inferred0"><a name="line21"></a>21 end </span><span
+    class="inferred1"><a name="line22"></a>22 </span><span class="marked0"><a
+    name="line23"></a>23 def calculate_ends_at </span><span class="marked1"><a
+    name="line24"></a>24 minutes = hours * 60 </span><span class="marked0"><a
+    name="line25"></a>25 time = minutes + minutes </span><span
+    class="marked1"><a name="line26"></a>26 self.ends_at = starts_at +
+    time.minutes </span><span class="marked0"><a name="line27"></a>27 self.day =
+    starts_at.strftime('%j') #also include numerical day of the year for ex 124
+    </span><span class="inferred1"><a name="line28"></a>28 end </span><span
+    class="inferred0"><a name="line29"></a>29 </span><span class="inferred1"><a
+    name="line30"></a>30 #validates the date selected does not conflict with
+    others </span><span class="marked0"><a name="line31"></a>31 private
+    </span><span class="marked1"><a name="line32"></a>32 def validate
+    </span><span class="marked0"><a name="line33"></a>33 for schedule in
+    Event.find_all_by_user_id(user_id) </span><span class="marked1"><a
+    name="line34"></a>34 unless schedule.id = id </span><span class="marked0"><a
+    name="line35"></a>35 if starts_at &gt;= schedule.starts_at and starts_at
+    &lt;= schedule.ends_at </span><span class="marked1"><a name="line36"></a>36
+    errors.add(&quot;The Date you selected conflicts with another event that was
+    scheduled from #{schedule.starts_at.strftime(&quot;%I:%M%p&quot;)} to
+    #{schedule.ends_at.strftime(&quot;%I:%M%p&quot;)} on
+    #{schedule.starts_at.strftime(&quot;%B %d&quot;)}. Date/time &quot;)
+    </span><span class="inferred0"><a name="line37"></a>37 else </span><span
+    class="inferred1"><a name="line38"></a>38 if ends_at &gt;=
+    schedule.starts_at and ends_at &lt;= schedule.ends_at </span><span
+    class="inferred0"><a name="line39"></a>39 errors.add(&quot;The Date you
+    selected conflicts with another assignment that was scheduled from
+    #{schedule.starts_at.strftime(&quot;%I:%M%p&quot;)} to
+    #{schedule.ends_at.strftime(&quot;%I:%M%p&quot;)} on
+    #{schedule.starts_at.strftime(&quot;%B %d&quot;)}. Date/time &quot;)
+    </span><span class="inferred1"><a name="line40"></a>40 end </span><span
+    class="inferred0"><a name="line41"></a>41 end </span><span
+    class="inferred1"><a name="line42"></a>42 end </span><span
+    class="inferred0"><a name="line43"></a>43 end </span><span
+    class="inferred1"><a name="line44"></a>44 end </span><span
+    class="inferred0"><a name="line45"></a>45 end </span></pre>
     <hr />
     <p> Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'> rcov
     code coverage analysis tool for Ruby </a> version 0.8.1.2. </p>

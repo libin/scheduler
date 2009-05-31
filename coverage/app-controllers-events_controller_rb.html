@@ -156,7 +156,7 @@
       C0 code coverage information
     </h3>
     <p>
-      Generated on Sun May 31 16:09:32 -0400 2009 with 
+      Generated on Sun May 31 19:31:08 -0400 2009 with 
       <a href='http://eigenclass.org/hiki/rcov'>
         rcov 0.8.1.2
       </a>
@@ -207,19 +207,19 @@
     name="line18"></a> 18 set_user(params[:user_id]) </span><span
     class="marked0"><a name="line19"></a> 19 parse_month_date(params[:date])
     </span><span class="inferred1"><a name="line20"></a> 20 </span><span
-    class="marked0"><a name="line21"></a> 21 @events =
-    Event.plot(@user.object_id, @last_month, @next_month) </span><span
-    class="inferred1"><a name="line22"></a> 22 </span><span class="marked0"><a
-    name="line23"></a> 23 respond_to do |format| </span><span class="marked1"><a
-    name="line24"></a> 24 format.html </span><span class="marked0"><a
-    name="line25"></a> 25 format.xml { render :xml =&gt; @events } </span><span
-    class="inferred1"><a name="line26"></a> 26 end </span><span
-    class="inferred0"><a name="line27"></a> 27 end </span><span
-    class="inferred1"><a name="line28"></a> 28 </span><span class="marked0"><a
-    name="line29"></a> 29 def list </span><span class="uncovered1"><a
-    name="line30"></a> 30 set_user(params[:user_id]) </span><span
-    class="uncovered0"><a name="line31"></a> 31 parse_month_date(params[:date])
-    </span><span class="uncovered1"><a name="line32"></a> 32 </span><span
+    class="marked0"><a name="line21"></a> 21 @events = Event.plot(@user.id,
+    @last_month, @next_month) </span><span class="inferred1"><a
+    name="line22"></a> 22 </span><span class="marked0"><a name="line23"></a> 23
+    respond_to do |format| </span><span class="marked1"><a name="line24"></a> 24
+    format.html </span><span class="marked0"><a name="line25"></a> 25 format.xml
+    { render :xml =&gt; @events } </span><span class="inferred1"><a
+    name="line26"></a> 26 end </span><span class="inferred0"><a
+    name="line27"></a> 27 end </span><span class="inferred1"><a
+    name="line28"></a> 28 </span><span class="marked0"><a name="line29"></a> 29
+    def list </span><span class="uncovered1"><a name="line30"></a> 30
+    set_user(params[:user_id]) </span><span class="uncovered0"><a
+    name="line31"></a> 31 parse_month_date(params[:date]) </span><span
+    class="uncovered1"><a name="line32"></a> 32 </span><span
     class="uncovered0"><a name="line33"></a> 33 @events = Event.plot(@user.id,
     @last_month, @next_month) </span><span class="uncovered1"><a
     name="line34"></a> 34 respond_to do |format| </span><span

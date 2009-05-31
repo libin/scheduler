@@ -156,7 +156,7 @@
       C0 code coverage information
     </h3>
     <p>
-      Generated on Sun May 31 16:09:32 -0400 2009 with 
+      Generated on Sun May 31 19:31:09 -0400 2009 with 
       <a href='http://eigenclass.org/hiki/rcov'>
         rcov 0.8.1.2
       </a>
@@ -174,7 +174,7 @@
     <td class='heading'> Total coverage </td> <td class='heading'> Code coverage
     </td> </tr> </thead> <tbody> <tr class='light'> <td> <a
     href='app-models-user_rb.html'> app/models/user.rb </a> </td> <td
-    class='lines_total'> <tt> 2 </tt> </td> <td class='lines_code'> <tt> 2 </tt>
+    class='lines_total'> <tt> 3 </tt> </td> <td class='lines_code'> <tt> 3 </tt>
     </td> <td> <table cellspacing='0' align='right' cellpadding='0'> <tr> <td>
     <tt class='coverage_total'> 100.0% </tt> &nbsp; </td> <td> <table
     class='percent_graph' cellspacing='0' cellpadding='0' width='100'> <tr> <td
@@ -185,8 +185,9 @@
     cellpadding='0' width='100'> <tr> <td class='covered' width='100' /> <td
     class='uncovered' width='0' /> </tr> </table> </td> </tr> </table> </td>
     </tr> </tbody> </table><pre><span class="marked1"><a name="line1"></a>1
-    class User &lt; ActiveRecord::Base </span><span class="inferred0"><a
-    name="line2"></a>2 end </span></pre>
+    class User &lt; ActiveRecord::Base </span><span class="marked0"><a
+    name="line2"></a>2 has_many :events </span><span class="inferred1"><a
+    name="line3"></a>3 end </span></pre>
     <hr />
     <p> Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'> rcov
     code coverage analysis tool for Ruby </a> version 0.8.1.2. </p>

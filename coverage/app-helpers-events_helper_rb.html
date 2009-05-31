@@ -156,7 +156,7 @@
       C0 code coverage information
     </h3>
     <p>
-      Generated on Sun May 31 16:09:32 -0400 2009 with 
+      Generated on Sun May 31 19:31:08 -0400 2009 with 
       <a href='http://eigenclass.org/hiki/rcov'>
         rcov 0.8.1.2
       </a>
@@ -174,16 +174,16 @@
     <td class='heading'> Total coverage </td> <td class='heading'> Code coverage
     </td> </tr> </thead> <tbody> <tr class='light'> <td> <a
     href='app-helpers-events_helper_rb.html'> app/helpers/events_helper.rb </a>
-    </td> <td class='lines_total'> <tt> 29 </tt> </td> <td class='lines_code'>
-    <tt> 26 </tt> </td> <td> <table cellspacing='0' align='right'
-    cellpadding='0'> <tr> <td> <tt class='coverage_total'> 58.6% </tt> &nbsp;
+    </td> <td class='lines_total'> <tt> 23 </tt> </td> <td class='lines_code'>
+    <tt> 21 </tt> </td> <td> <table cellspacing='0' align='right'
+    cellpadding='0'> <tr> <td> <tt class='coverage_total'> 47.8% </tt> &nbsp;
     </td> <td> <table class='percent_graph' cellspacing='0' cellpadding='0'
-    width='100'> <tr> <td class='covered' width='59' /> <td class='uncovered'
-    width='41' /> </tr> </table> </td> </tr> </table> </td> <td> <table
+    width='100'> <tr> <td class='covered' width='48' /> <td class='uncovered'
+    width='52' /> </tr> </table> </td> </tr> </table> </td> <td> <table
     cellspacing='0' align='right' cellpadding='0'> <tr> <td> <tt
-    class='coverage_code'> 53.8% </tt> &nbsp; </td> <td> <table
+    class='coverage_code'> 42.9% </tt> &nbsp; </td> <td> <table
     class='percent_graph' cellspacing='0' cellpadding='0' width='100'> <tr> <td
-    class='covered' width='54' /> <td class='uncovered' width='46' /> </tr>
+    class='covered' width='43' /> <td class='uncovered' width='57' /> </tr>
     </table> </td> </tr> </table> </td> </tr> </tbody> </table><pre><span
     class="marked0"><a name="line1"></a> 1 module EventsHelper </span><span
     class="marked1"><a name="line2"></a> 2 def left(starts_at) </span><span
@@ -199,22 +199,16 @@
     name="line11"></a>11 return position </span><span class="uncovered1"><a
     name="line12"></a>12 end </span><span class="inferred0"><a
     name="line13"></a>13 </span><span class="marked1"><a name="line14"></a>14
-    def top(starts_at) </span><span class="inferred0"><a name="line15"></a>15
-    day = starts_at.strftime('%w').to_i + 1 </span><span class="inferred1"><a
-    name="line16"></a>16 position = day * 75 </span><span class="inferred0"><a
-    name="line17"></a>17 return position </span><span class="inferred1"><a
-    name="line18"></a>18 end </span><span class="inferred0"><a
-    name="line19"></a>19 </span><span class="marked1"><a name="line20"></a>20
     def width(hours,minutes) </span><span class="uncovered0"><a
-    name="line21"></a>21 min = (hours * 60) + minutes </span><span
-    class="uncovered1"><a name="line22"></a>22 unless min &lt; 60 </span><span
-    class="uncovered0"><a name="line23"></a>23 width = (min * 1.25) - 12
-    </span><span class="uncovered1"><a name="line24"></a>24 else </span><span
-    class="uncovered0"><a name="line25"></a>25 width = 63 </span><span
-    class="uncovered1"><a name="line26"></a>26 end </span><span
-    class="uncovered0"><a name="line27"></a>27 return width </span><span
-    class="uncovered1"><a name="line28"></a>28 end </span><span
-    class="uncovered0"><a name="line29"></a>29 end </span></pre>
+    name="line15"></a>15 min = (hours * 60) + minutes </span><span
+    class="uncovered1"><a name="line16"></a>16 unless min &lt; 60 </span><span
+    class="uncovered0"><a name="line17"></a>17 width = (min * 1.25) - 12
+    </span><span class="uncovered1"><a name="line18"></a>18 else </span><span
+    class="uncovered0"><a name="line19"></a>19 width = 63 </span><span
+    class="uncovered1"><a name="line20"></a>20 end </span><span
+    class="uncovered0"><a name="line21"></a>21 return width </span><span
+    class="uncovered1"><a name="line22"></a>22 end </span><span
+    class="uncovered0"><a name="line23"></a>23 end </span></pre>
     <hr />
     <p> Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'> rcov
     code coverage analysis tool for Ruby </a> version 0.8.1.2. </p>
