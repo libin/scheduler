@@ -18,7 +18,9 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: mysql
+  database: schedule
+  username: dmix
+  user: dmix
+  password: dbpass1
+  host: localhost
