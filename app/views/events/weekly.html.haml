@@ -29,10 +29,11 @@
         #day_row
           - for event in @events
             - if event.starts_at.strftime('%A') == day.strftime('%A') 
-              %div{"id"=>"week_event", "style"=>"left:#{left(event.starts_at)}px;width:#{width(event.hours,event.minutes)}px"}
-                .dim
-                  = event.starts_at.strftime('%I:%M%p')
-                = link_to truncate(event.name,35), event_path(event)
+              - if event.starts_at.strftime('%H').to_i >= 6 and event.ends_at.strftime('%H').to_i <= 24 
+                %div{"id"=>"week_event", "style"=>"left:#{left(event.starts_at)}px;width:#{width(event.hours,event.minutes)}px"}
+                  .dim
+                    = event.starts_at.strftime('%I:%M%p')
+                  = link_to truncate(event.name,35), event_path(event)
 %center
   %b
     = link_to "Business Hours", weekly_path

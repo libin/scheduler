@@ -29,7 +29,6 @@
         #full_day_row
           - for event in @events
             - if event.starts_at.strftime('%A') == day.strftime('%A') 
-              - if event.starts_at.strftime('%H').to_i >= 6 and event.ends_at.strftime('%H').to_i <= 24 
                 %div{"id"=>"week_event", "style"=>"left:#{full_left(event.starts_at)}px;width:#{width(event.hours,event.minutes)}px"}
                   .dim
                     = event.starts_at.strftime('%I:%M%p')

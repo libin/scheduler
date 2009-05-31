@@ -21,6 +21,5 @@ production:
   adapter: mysql
   database: schedule
   username: dmix
-  user: dmix
   password: dbpass1
   host: localhost

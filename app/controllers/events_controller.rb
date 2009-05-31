@@ -19,7 +19,6 @@ class EventsController < ApplicationController
     parse_month_date(params[:date])
     
     @events = Event.plot(@user.id, @last_month, @next_month)
-    
     respond_to do |format|
       format.html 
       format.xml  { render :xml => @events }
