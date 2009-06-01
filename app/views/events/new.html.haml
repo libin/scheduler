@@ -2,7 +2,7 @@
   %h1 New event
   = error_messages_for :event 
 
-  - form_for(:event, :url => {:action => "create", :referrer => params[:referrer] } ) do |f| 
+  - form_for(@event) do |f| 
     %p
       %b User
       %br
@@ -26,7 +26,7 @@
     %p
       %b Date to Schedule Event
       %br
-      = f.unobtrusive_datetime_picker :starts_at
+      = f.datetime_select :starts_at
     %p
       = f.submit "Create"
     

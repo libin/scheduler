@@ -7,7 +7,6 @@
     = stylesheet_link_tag 'week'
     = stylesheet_link_tag 'calendar'
     = javascript_include_tag :defaults
-    = unobtrusive_datepicker_includes
       
   %body
     #base
@@ -18,7 +17,7 @@
         #right
           %img{ :src => "/images/add.png" }
             #link
-              = link_to "New Event", :controller => "events", :action => "new", :referrer => action_name
+              = link_to "New Event", :controller => "events", :action => "new"
         %h1 
           = link_to "Scheduler", root_path
         

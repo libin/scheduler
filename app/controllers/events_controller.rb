@@ -102,18 +102,16 @@ class EventsController < ApplicationController
     respond_to do |format|
       if @event.save
         flash[:notice] = 'Event was successfully created.'
-        if params[:referrer].blank? or params[:referrer] == "show" or params[:referrer] == "new"
-          format.html { redirect_to(event_path(@event)) }
-        else
-          format.html { redirect_to :action => params[:referrer] }
-        end
+        format.html { redirect_to(event_path(@event)) }
         format.xml  { render :xml => @event, :status => :created, :location => @event }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @event.errors, :status => :unprocessable_entity }
       end
     end
-  end
+    
+
+end
 
   # PUT /event/1
   # PUT /event/1.xml
