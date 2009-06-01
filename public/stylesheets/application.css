@@ -88,13 +88,14 @@ h4 {
 
 #footer {
   width: 98%;
-  height: 25px;
+  height: 20px;
   background: #262626;
   color: #ccc;
   padding: 1%;
   margin-top: 10px;
   text-align: center;
-  font-size: 90%; }
+  font-size: 90%;
+  border-bottom: 6px solid #111; }
   #footer a {
     color: #666666; }
 
