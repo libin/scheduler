@@ -1,11 +1,11 @@
 #users 
   = render :partial => "select_user"
 %h3
-  = link_to "« Previous Month", "/list?date=#{@last_month.to_s}"
+  = link_to "« Previous Month", "/list?date=#{@last_month.strftime('%Y-%m-%d')}"
   = @last_month.strftime("%B %d -")
   = @next_month.strftime("%B %d")
   = @date.year
-  = link_to " Next Month »", "/list?date=#{@next_month.to_s}"
+  = link_to " Next Month »", "/list?date=#{@next_month.strftime('%Y-%m-%d')}"
 
 - for event in @events
   #list_event
