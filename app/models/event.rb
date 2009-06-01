@@ -1,7 +1,7 @@
 class Event < ActiveRecord::Base
   belongs_to :user
   before_validation :set_hours_and_minutes_if_nil
-  before_validation :calculate_ends_at
+  before_create :calculate_ends_at
 
   validates_presence_of :user_id, :on => :create, :message => "can't be blank"
   validates_presence_of :name, :on => :create, :message => "can't be blank"
@@ -30,6 +30,11 @@ class Event < ActiveRecord::Base
   #validates the date selected does not conflict with others
   private
   def validate
+    #calculate ends at so it validates
+    minutes = hours * 60
+    time = minutes + minutes
+    ends_at = starts_at + time.minutes
+    
     for schedule in Event.find_all_by_user_id(user_id)
       unless schedule.id = id
         if starts_at >= schedule.starts_at and starts_at <= schedule.ends_at
