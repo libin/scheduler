@@ -13,9 +13,7 @@
       .day
         = day.day
       - tasks.each do |task|
-        #event
-          #delete
-            = link_to 'x', event_path(task.id), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+        %div{:id =>"event", :onclick => "location.href='#{event_path(task)}';"}
           = task.starts_at.strftime('%H:%M')
           = link_to task.name, event_path(task.id)
 

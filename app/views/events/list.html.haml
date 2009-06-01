@@ -9,15 +9,13 @@
 
 - for event in @events
   #list_event
-    #right
-      = link_to 'Edit', edit_event_path(event)
-      |
-      = link_to 'Destroy', event_path(event), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
-  
     %h3
       = event.name
       @
       =h event.starts_at.strftime("%B %d %I:%M%p")
+      = link_to 'Edit', edit_event_path(event)
+      |
+      = link_to 'Destroy', event_path(event), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
     
     %p
       %b Description:

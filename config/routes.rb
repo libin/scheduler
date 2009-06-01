@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.weekly_all "weekly_all", :controller => "events", :action => "weekly_all"
   map.list "list", :controller => "events", :action => "list"
   
-  map.root :monthly
+  map.root :weekly
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
