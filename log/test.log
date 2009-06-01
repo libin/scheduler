@@ -30704,3 +30704,2513 @@ Completed in 7ms (View: 1, DB: 0) | 200 OK [http://test.host/events]
   [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
   [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
   [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (43.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:45:54) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 48) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:45:54) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:45:54) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:45:54) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:45:54) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:45:54) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:45:54) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:45:54) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:45:54) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:45:54) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:45:54) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:45:54) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:45:54) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:45:54) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.2ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:45:54', 30, '2009-06-01 00:45:54', '2009-06-01 00:45:54', 1, '2009-06-01 04:45:54', 152, NULL, 2)[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.2ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:45:54', 30, '2009-06-01 00:45:54', '2009-06-01 00:45:54', 1, '2009-06-01 04:45:54', 152, NULL, 2)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (47.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:46:35) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 52) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:46:35) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:46:35) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:46:35) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:46:35) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:46:35) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:46:35) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:46:35) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:46:35) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:46:35) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:46:35) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:46:36) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:46:36) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:46:36) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:46:36) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:46:36) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:46:36) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:46:36) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:46:36) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:46:36) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:46:36) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:46:36) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events?]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (3.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 4) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  [4;35;1mUser Load (6.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 8ms (View: 0, DB: 6) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:46:36) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (36.8ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.3ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:46:36', 30, '2009-06-01 00:46:36', '2009-06-01 00:46:36', 1, '2009-06-01 04:46:36', 152, NULL, 2)[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.3ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:46:36', 30, '2009-06-01 00:46:36', '2009-06-01 00:46:36', 1, '2009-06-01 04:46:36', 152, NULL, 2)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (45.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:48:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 3ms (DB: 49) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:48:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:48:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:48:17) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:48:17) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:48:17) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:17) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:48:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:48:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:48:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:17) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:48:17) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:48:17) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:48:17) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:48:18) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.7ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:48:18', 30, '2009-06-01 00:48:18', '2009-06-01 00:48:18', 1, '2009-06-01 04:48:18', 152, NULL, 2)[0m
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.2ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:48:18', 30, '2009-06-01 00:48:18', '2009-06-01 00:48:18', 1, '2009-06-01 04:48:18', 152, NULL, 2)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (1.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (47.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:48:28) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 52) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:48:28) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:48:28) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:48:28) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:48:28) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:48:28) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:48:28) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:48:28) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:48:28) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:48:28) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:48:28) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:48:28) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:48:28) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:29) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:48:29) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:48:29) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:48:29) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:48:29) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 12ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (37.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` IS NULL) [0m
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` IS NULL) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.3ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:48:29', 30, '2009-06-01 00:48:29', '2009-06-01 00:48:29', 1, '2009-06-01 04:48:29', 152, NULL, 2)[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.2ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:48:29', 30, '2009-06-01 00:48:29', '2009-06-01 00:48:29', 1, '2009-06-01 04:48:29', 152, NULL, 2)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (44.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:49:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 3ms (DB: 48) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:49:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-05-31 20:49:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:49:33) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:49:33) [POST]
+  Parameters: {"user"=>{}}
+Redirected to /users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-05-31 20:49:33) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:49:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:49:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-05-31 20:49:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/events
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-05-31 20:49:33) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:49:33) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:49:33) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Redirected to /events/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-05-31 20:49:33) [POST]
+  Parameters: {"event"=>{}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events?]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/new
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/events/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-05-31 20:49:33) [GET]
+Rendering template within layouts/application
+Rendering events/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://test.host/events]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (38.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` IS NULL) [0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` IS NULL) [0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` IS NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Create (0.3ms)[0m   [0mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:49:34', 30, '2009-06-01 00:49:34', '2009-06-01 00:49:34', 1, '2009-06-01 04:49:34', 151, NULL, 2)[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Create (0.2ms)[0m   [0mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Pick up the milk', '2009-06-01 00:49:34', 30, '2009-06-01 00:49:34', '2009-06-01 00:49:34', 1, '2009-06-01 04:49:34', 151, NULL, 2)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m

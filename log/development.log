@@ -34482,3 +34482,462 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:36)
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:36)
 Completed in 50ms (View: 31, DB: 6) | 200 OK [http://localhost/weekly]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (94.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `schedule_test`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE DATABASE `schedule_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (72.9ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `name` varchar(255), `description` text, `hours` int(11), `minutes` int(11), `starts_at` datetime, `ends_at` datetime, `day` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (161.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (111.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090531040107')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (54.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `schedule_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `schedule_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (74.7ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `name` varchar(255), `description` text, `hours` int(11), `minutes` int(11), `starts_at` datetime, `ends_at` datetime, `day` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (211.9ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (111.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090531040107')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `schedule_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `schedule_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (61.1ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `name` varchar(255), `description` text, `hours` int(11), `minutes` int(11), `starts_at` datetime, `ends_at` datetime, `day` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (135.9ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (82.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (95.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090531040107')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (51.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `schedule_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `schedule_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (71.4ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `name` varchar(255), `description` text, `hours` int(11), `minutes` int(11), `starts_at` datetime, `ends_at` datetime, `day` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (134.7ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (86.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090531040107')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `schedule_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `schedule_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (59.6ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `name` varchar(255), `description` text, `hours` int(11), `minutes` int(11), `starts_at` datetime, `ends_at` datetime, `day` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (119.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (91.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090531040107')[0m
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-05-31 20:49:48) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (49.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.5ms)
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-04-30 20:49:48' and '2009-06-30 20:49:48') ORDER BY starts_at ASC[0m
+  [4;35;1mEvent Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Completed in 107ms (View: 37, DB: 56) | 200 OK [http://localhost/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:49:50) [GET]
+  Parameters: {"referrer"=>"index"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mEvent Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mUser Columns (37.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 74ms (View: 23, DB: 41) | 200 OK [http://localhost/events/new?referrer=index]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:49:58) [POST]
+  Parameters: {"referrer"=>"index", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"Hello World", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"6", "minutes"=>"0", "starts_at(3i)"=>"1", "starts_at(4i)"=>"00", "starts_at(5i)"=>"49", "user_id"=>"1", "hours"=>"1", "description"=>""}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mEvent Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Create (0.2ms)[0m   [0mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Hello World', '2009-06-01 00:49:58', 0, '2009-06-01 00:49:00', '2009-06-01 00:49:58', 1, '2009-06-01 02:49:58', 151, '', 1)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to actionindex
+Completed in 23ms (DB: 5) | 302 Found [http://localhost/events?referrer=index]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-05-31 20:49:58) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (59.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.5ms)
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-04-30 20:49:58' and '2009-06-30 20:49:58') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 117ms (View: 39, DB: 64) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2009-05-31 20:50:06) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEvent Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.8ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 41ms (View: 25, DB: 9) | 200 OK [http://localhost/events/16]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:50:09) [GET]
+  Parameters: {"referrer"=>"show"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mEvent Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mUser Columns (40.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 80ms (View: 26, DB: 44) | 200 OK [http://localhost/events/new?referrer=show]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:50:18) [POST]
+  Parameters: {"referrer"=>"show", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"xxx", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"6", "minutes"=>"0", "starts_at(3i)"=>"1", "starts_at(4i)"=>"00", "starts_at(5i)"=>"50", "user_id"=>"1", "hours"=>"1", "description"=>""}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mEvent Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 49ms (View: 22, DB: 7) | 200 OK [http://localhost/events?referrer=show]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:50:26) [POST]
+  Parameters: {"referrer"=>"show", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"xxx", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"6", "minutes"=>"0", "starts_at(3i)"=>"2", "starts_at(4i)"=>"00", "starts_at(5i)"=>"50", "user_id"=>"1", "hours"=>"1", "description"=>""}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (44.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.8ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.3ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('xxx', '2009-06-01 00:50:26', 0, '2009-06-02 00:50:00', '2009-06-01 00:50:26', 1, '2009-06-01 02:50:26', 151, '', 1)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Redirected to actionshow
+Completed in 71ms (DB: 51) | 302 Found [http://localhost/events?referrer=show]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2009-05-31 20:50:26) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEvent Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 0) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find Event with ID=show):
+    /Users/dmix/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1528:in `find_one'
+    /Users/dmix/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:1511:in `find_from_ids'
+    /Users/dmix/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/base.rb:590:in `find'
+    /app/controllers/events_controller.rb:70:in `show'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/dmix/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/dmix/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `sass_old_process'
+    /Users/dmix/.gem/ruby/1.8/gems/haml-2.0.9/lib/sass/plugin/rails.rb:19:in `process'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Users/dmix/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /Users/dmix/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/dmix/.gem/ruby/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /Users/dmix/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/dmix/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Users/dmix/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/dmix/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Users/dmix/.gem/ruby/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (113.8ms)
+Rendered /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.6ms)
+Rendering /Users/dmix/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:51:10) [POST]
+  Parameters: {"referrer"=>"show", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"xxx", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"6", "minutes"=>"0", "starts_at(3i)"=>"2", "starts_at(4i)"=>"00", "starts_at(5i)"=>"50", "user_id"=>"1", "hours"=>"1", "description"=>""}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (43.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.8ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mEvent Create (0.3ms)[0m   [0;1mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('xxx', '2009-06-01 00:51:10', 0, '2009-06-02 00:50:00', '2009-06-01 00:51:10', 1, '2009-06-01 02:51:10', 151, '', 1)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+Redirected to /events/21
+Completed in 69ms (DB: 49) | 302 Found [http://localhost/events?referrer=show]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2009-05-31 20:51:10) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEvent Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;35;1mUser Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 38ms (View: 22, DB: 8) | 200 OK [http://localhost/events/21]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-05-31 20:51:17) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (51.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.7ms)
+  [4;35;1mEvent Load (1.0ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-04-30 20:51:18' and '2009-06-30 20:51:18') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 109ms (View: 39, DB: 58) | 200 OK [http://localhost/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:51:19) [GET]
+  Parameters: {"referrer"=>"index"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mUser Columns (38.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 80ms (View: 28, DB: 43) | 200 OK [http://localhost/events/new?referrer=index]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:51:20) [GET]
+  Parameters: {"referrer"=>"new"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mUser Columns (36.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 157ms (View: 106, DB: 41) | 200 OK [http://localhost/events/new?referrer=new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:51:27) [POST]
+  Parameters: {"referrer"=>"new", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"Hello World", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"6", "minutes"=>"0", "starts_at(3i)"=>"1", "starts_at(4i)"=>"00", "starts_at(5i)"=>"51", "user_id"=>"1", "hours"=>"1", "description"=>""}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 20, DB: 6) | 200 OK [http://localhost/events?referrer=new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:51:31) [POST]
+  Parameters: {"referrer"=>"new", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"Hello World", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"6", "minutes"=>"0", "starts_at(3i)"=>"17", "starts_at(4i)"=>"00", "starts_at(5i)"=>"51", "user_id"=>"1", "hours"=>"1", "description"=>""}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mEvent Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mSQL (44.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 1) [0m
+  [4;35;1mEvent Create (0.3ms)[0m   [0mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Hello World', '2009-06-01 00:51:31', 0, '2009-06-17 00:51:00', '2009-06-01 00:51:31', 1, '2009-06-01 02:51:31', 151, '', 1)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to actionnew
+Completed in 74ms (DB: 51) | 302 Found [http://localhost/events?referrer=new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:51:31) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 41ms (View: 25, DB: 5) | 200 OK [http://localhost/events/new]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-05-31 20:51:51) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (48.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.4ms)
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-04-30 20:51:51' and '2009-06-30 20:51:51') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 105ms (View: 37, DB: 56) | 200 OK [http://localhost/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:51:55) [GET]
+  Parameters: {"referrer"=>"index"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mUser Columns (36.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 74ms (View: 24, DB: 40) | 200 OK [http://localhost/events/new?referrer=index]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-05-31 20:51:58) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (49.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.3ms)
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-04-30 20:51:58' and '2009-06-30 20:51:58') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 105ms (View: 37, DB: 56) | 200 OK [http://localhost/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:52:01) [GET]
+  Parameters: {"referrer"=>"index"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mUser Columns (37.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 79ms (View: 28, DB: 41) | 200 OK [http://localhost/events/new?referrer=index]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2009-05-31 20:52:01) [GET]
+  Parameters: {"referrer"=>"new"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mUser Columns (42.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 79ms (View: 24, DB: 45) | 200 OK [http://localhost/events/new?referrer=new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:52:06) [POST]
+  Parameters: {"referrer"=>"new", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"Go to the hospital", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"6", "minutes"=>"0", "starts_at(3i)"=>"1", "starts_at(4i)"=>"00", "starts_at(5i)"=>"52", "user_id"=>"2", "hours"=>"1", "description"=>""}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mEvent Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`user_id` = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 48ms (View: 22, DB: 7) | 200 OK [http://localhost/events?referrer=new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2009-05-31 20:52:09) [POST]
+  Parameters: {"referrer"=>"new", "commit"=>"Create", "authenticity_token"=>"9bb59009e975d7dff40786e288ce9b27b3043179", "event"=>{"name"=>"Go to the hospital", "starts_at(1i)"=>"2009", "starts_at(2i)"=>"12", "minutes"=>"0", "starts_at(3i)"=>"1", "starts_at(4i)"=>"00", "starts_at(5i)"=>"52", "user_id"=>"2", "hours"=>"1", "description"=>""}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mEvent Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`user_id` = 2) [0m
+  [4;35;1mEvent Create (0.3ms)[0m   [0mINSERT INTO `events` (`name`, `created_at`, `minutes`, `starts_at`, `updated_at`, `user_id`, `ends_at`, `day`, `description`, `hours`) VALUES('Go to the hospital', '2009-06-01 00:52:09', 0, '2009-12-01 00:52:00', '2009-06-01 00:52:09', 2, '2009-06-01 02:52:09', 151, '', 1)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to /events/23
+Completed in 71ms (DB: 52) | 302 Found [http://localhost/events?referrer=new]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2009-05-31 20:52:09) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEvent Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (1.0ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Completed in 113ms (View: 99, DB: 7) | 200 OK [http://localhost/events/23]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-05-31 20:52:12) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (43.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.3ms)
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-04-30 20:52:12' and '2009-06-30 20:52:12') ORDER BY starts_at ASC[0m
+  [4;35;1mEvent Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Completed in 104ms (View: 41, DB: 51) | 200 OK [http://localhost/]

@@ -1,7 +1,7 @@
 class Event < ActiveRecord::Base
   belongs_to :user
   before_validation :set_hours_and_minutes_if_nil
-  before_create :calculate_ends_at
+  before_validation :calculate_ends_at
 
   validates_presence_of :user_id, :on => :create, :message => "can't be blank"
   validates_presence_of :name, :on => :create, :message => "can't be blank"
@@ -21,6 +21,7 @@ class Event < ActiveRecord::Base
   end
    
   def calculate_ends_at
+    starts_at = Time.now unless !starts_at.nil?
     minutes = hours * 60
     time = minutes + minutes
     self.ends_at = starts_at + time.minutes
