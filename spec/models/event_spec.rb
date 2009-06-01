@@ -17,12 +17,6 @@ describe Event do
     @event.should be_valid
   end
   
-  it "should have 3 errors" do
-    @event.should have(1).error_on(:name)
-    @event.should have(1).error_on(:starts_at)
-    @event.should have(1).error_on(:user_id)
-  end
-  
   it "should not conflict with other events" do
     @event.attributes = valid_event_attributes
     @event.should be_valid
