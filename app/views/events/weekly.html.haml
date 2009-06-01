@@ -1,12 +1,11 @@
 #users 
   = render :partial => "select_user"
-%h3
+%h4
   = link_to "« Previous Week", "/weekly?start_date=#{@start_date - 7}"
   = @start_date.strftime("%B %d -")
   = @end_date.strftime("%B %d")
   = @date.year
   = link_to "Next Week »", "/weekly?start_date=#{@start_date + 7}"
-  
 #week
   #days
     #placeholder

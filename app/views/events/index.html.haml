@@ -1,7 +1,7 @@
 #users 
   = render :partial => "select_index_user"
 #cal
-  %h3
+  %h4
     = link_to "« Previous Month", "/events?date=#{@last_month.strftime('%Y-%m-%d')}"
     = @date.strftime(" %B")
     = @date.year
