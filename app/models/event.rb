@@ -21,7 +21,6 @@ class Event < ActiveRecord::Base
   end
    
   def calculate_ends_at
-    starts_at = Time.now unless !starts_at.nil?
     minutes = hours * 60
     time = minutes + minutes
     self.ends_at = starts_at + time.minutes
