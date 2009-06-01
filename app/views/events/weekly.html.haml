@@ -31,6 +31,8 @@
             - if event.starts_at.strftime('%A') == day.strftime('%A') 
               - if event.starts_at.strftime('%H').to_i >= 6 and event.ends_at.strftime('%H').to_i <= 24 
                 %div{"id"=>"week_event", "style"=>"left:#{left(event.starts_at)}px;width:#{width(event.hours,event.minutes)}px"}
+                  #delete
+                    = link_to 'x', event_path(event), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
                   .dim
                     = event.starts_at.strftime('%I:%M%p')
                   = link_to truncate(event.name,35), event_path(event)
