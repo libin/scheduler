@@ -34,8 +34,7 @@
                   .dim
                     = event.starts_at.strftime('%I:%M%p')
                   = link_to truncate(event.name,35), event_path(event)
-%center
-  %b
-    = link_to "Business Hours", weekly_path
-  | 
-  = link_to "24-Hours", weekly_all_path
+%b
+  = link_to "Business Hours", weekly_path
+| 
+= link_to "24-Hours", weekly_all_path
