@@ -9,6 +9,7 @@ TODO
 - extract weekly calendar out of view to plugin (release open-source)
 - add daily view with multiple users on a page (view teams daily schedule)
 - add calendar_date_select to new/edit
+- IE6 friendly *only tested on FF3*
 
 Code is not yet under an open license yet but feel free to play around with it.
 
