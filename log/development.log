@@ -48991,3 +48991,175 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
 Completed in 76ms (View: 36, DB: 27) | 200 OK [http://localhost/weekly]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-06-01 19:18:45) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (46.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.4ms)
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-05-01 19:18:45' and '2009-07-01 19:18:45') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 108ms (View: 41, DB: 54) | 200 OK [http://localhost/monthly]
+
+
+Processing EventsController#list (for 127.0.0.1 at 2009-06-01 19:18:48) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (49.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/list
+Rendered events/_select_user (1.4ms)
+  [4;35;1mEvent Load (1.0ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-05-01 19:18:48' and '2009-07-01 19:18:48') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 99ms (View: 29, DB: 56) | 200 OK [http://localhost/list]
+
+
+Processing EventsController#weekly (for 127.0.0.1 at 2009-06-01 19:18:49) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (43.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/weekly
+Rendered events/_select_user (1.3ms)
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-06-01' and '2009-06-07') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+Completed in 183ms (View: 121, DB: 50) | 200 OK [http://localhost/weekly]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2009-06-01 19:19:07) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (45.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/index
+Rendered events/_select_index_user (1.4ms)
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-05-01 19:19:07' and '2009-07-01 19:19:07') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 111ms (View: 44, DB: 52) | 200 OK [http://localhost/monthly]
+
+
+Processing EventsController#list (for 127.0.0.1 at 2009-06-01 19:19:08) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (45.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/list
+Rendered events/_select_user (1.4ms)
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-05-01 19:19:08' and '2009-07-01 19:19:08') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Completed in 93ms (View: 27, DB: 53) | 200 OK [http://localhost/list]
+
+
+Processing EventsController#weekly (for 127.0.0.1 at 2009-06-01 19:19:09) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (43.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/weekly
+Rendered events/_select_user (1.6ms)
+  [4;35;1mEvent Load (1.5ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-06-01' and '2009-06-07') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+Completed in 98ms (View: 35, DB: 51) | 200 OK [http://localhost/weekly]
+
+
+Processing EventsController#weekly (for 127.0.0.1 at 2009-06-01 19:23:53) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (30.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/weekly
+Rendered events/_select_user (1.5ms)
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-06-01' and '2009-06-07') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+Completed in 87ms (View: 40, DB: 35) | 200 OK [http://localhost/]
+
+
+Processing EventsController#weekly (for 127.0.0.1 at 2009-06-01 19:25:43) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (44.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/weekly
+Rendered events/_select_user (1.6ms)
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-06-01' and '2009-06-07') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+Completed in 102ms (View: 37, DB: 52) | 200 OK [http://localhost/]
+
+
+Processing EventsController#weekly (for 127.0.0.1 at 2009-06-01 19:26:10) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (43.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/weekly
+Rendered events/_select_user (1.5ms)
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-06-01' and '2009-06-07') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:34)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:34)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:34)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:34)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:34)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:34)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:34)
+Completed in 99ms (View: 35, DB: 51) | 200 OK [http://localhost/]
+
+
+Processing EventsController#weekly (for 127.0.0.1 at 2009-06-01 19:26:51) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering events/weekly
+Rendered events/_select_user (1.3ms)
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM `events` WHERE (user_id = 1 and starts_at between '2009-06-01' and '2009-06-07') ORDER BY starts_at ASC[0m
+  [4;36;1mEvent Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47events47weekly46html46haml at /Users/dmix/rails/schedule/app/views/events/weekly.html.haml:35)
+Completed in 53ms (View: 35, DB: 7) | 200 OK [http://localhost/]
