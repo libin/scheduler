@@ -109,9 +109,7 @@ class EventsController < ApplicationController
         format.xml  { render :xml => @event.errors, :status => :unprocessable_entity }
       end
     end
-    
-
-end
+  end
 
   # PUT /event/1
   # PUT /event/1.xml

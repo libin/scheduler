@@ -24,16 +24,16 @@ class Event < ActiveRecord::Base
     min = hours * 60
     time = minutes + min
     self.ends_at = starts_at + time.minutes
-    self.day = starts_at.strftime('%j') #also include numerical day of the year for ex 124
+    self.day = starts_at.strftime('%j') #also include numerical day of the year ex. 124
   end
   
-  #validates the date selected does not conflict with others
+  #validates the date selected so it does not conflict with others
   private
   def validate
     min = hours * 60
     time = minutes + min
-    ends_at = starts_at + time.minutes
-    #calculate ends at so it validates
+    ends_at = starts_at + time.minutes #calculate ends at so its not dependent on callback
+    
     for schedule in Event.find_all_by_user_id(user_id)
       unless schedule.id = id
         if starts_at >= schedule.starts_at and starts_at <= schedule.ends_at

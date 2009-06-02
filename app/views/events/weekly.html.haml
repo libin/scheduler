@@ -1,39 +1,14 @@
 #users 
   = render :partial => "select_user"
 %h4
-  = link_to "« Previous Week", "/weekly?start_date=#{@start_date - 7}"
-  = @start_date.strftime("%B %d -")
-  = @end_date.strftime("%B %d")
-  = @date.year
-  = link_to "Next Week »", "/weekly?start_date=#{@start_date + 7}"
-#week
-  #days
-    #placeholder
-      %b Weekly View
-    - for day in @start_date..@end_date
-      #day
-        %b
-          = day.strftime('%A')
-        %br
-        = day.strftime('%B %d')
-        
-  #hours
-    #header_row
-      - for hour in @hours
-        #header_box
-          %b
-            = hour
-    #grid
-      - for day in @start_date..@end_date
-        #day_row
-          - for event in @events
-            - if event.starts_at.strftime('%A') == day.strftime('%A') 
-              - if event.starts_at.strftime('%H').to_i >= 6 and event.ends_at.strftime('%H').to_i <= 24 
-                %div{:id =>"week_event", :style =>"left:#{left(event.starts_at)}px;width:#{width(event.hours,event.minutes)}px;", :onclick => "location.href='#{event_path(event)}';"}
-                  .dim
-                    = event.starts_at.strftime('%I:%M%p')
-                  = link_to truncate(event.name,35), event_path(event)
-%b
-  = link_to "Business Hours", weekly_path
-| 
-= link_to "24-Hours", weekly_all_path
+  - weekly_links(:start_date => @start_date, :end_date => @end_date)
+- weekly_calendar(@events, :start_date => @start_date, :end_date => @end_date, :include_24_hours => true) do |w|
+  - w.days(:title => "Weekly View")
+  - w.week(:business_hours => params[:business_hours]) do |event|
+    .dim
+      = event.starts_at.strftime('%I:%M%p')
+    = link_to truncate(event.name,35), event_path(event)
+
+
+
+
