@@ -1,14 +1,13 @@
 #users 
   = render :partial => "select_user"
+
 %h4
-  - weekly_links(:start_date => @start_date, :end_date => @end_date)
-- weekly_calendar(@events, :start_date => @start_date, :end_date => @end_date, :include_24_hours => true) do |w|
-  - w.days(:title => "Weekly View")
+  - weekly_links(:date => @date)
+- weekly_calendar(@events, :date => @date, :include_24_hours => true) do |w|
   - w.week(:business_hours => params[:business_hours]) do |event|
     .dim
       = event.starts_at.strftime('%I:%M%p')
     = link_to truncate(event.name,35), event_path(event)
-
 
 
 

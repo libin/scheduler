@@ -35,35 +35,18 @@ class EventsController < ApplicationController
       format.xml  { render :xml => @events }
     end
   end
-  
-  def parse_week_date(start_date)
-    @date = Time.parse("#{start_date} || Time.now.utc")
-    @start_date = Date.new(@date.year, @date.month, @date.day) 
-    @end_date = Date.new(@date.year, @date.month, @date.day) + 6
-  end
-  
+
   def weekly
     set_user(params[:user_id])
-    parse_week_date(params[:start_date])
-    @hours = ["6am","7am","8am","9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm","8pm"]
-    @events = Event.plot(@user.id,@start_date, @end_date)
+    @date = Time.parse("#{params[:start_date]} || Time.now.utc")
+    @start_date = Date.new(@date.year, @date.month, @date.day) 
+    @events = Event.plot(@user.id, @start_date, @start_date + 6)
     respond_to do |format|
       format.html 
       format.xml  { render :xml => @events }
     end
   end
-  
-  def weekly_all
-    set_user(params[:user_id])
-    parse_week_date(params[:start_date])
-    @hours = ["1am","2am","3am","4am","5am","6am","7am","8am","9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm","8pm","9pm","10pm","11pm","12pm"]
-    @events = Event.plot(@user.id,@start_date, @end_date)  
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @events }
-    end
-  end
-  
+    
   # GET /event/1
   # GET /event/1.xml
   def show
