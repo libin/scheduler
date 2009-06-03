@@ -5,6 +5,6 @@
   %option
     = "- Select User -"
   - for user in @users
-    %option{ "value"=>"/#{action_name}/?start_date=#{@start_date}?user_id=#{user.id}"}
+    %option{ "value"=>"/#{action_name}/?start_date=#{@start_date}"}
       = user.name
       

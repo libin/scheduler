@@ -40,6 +40,8 @@ class EventsController < ApplicationController
     set_user(params[:user_id])
     @date = Time.parse("#{params[:start_date]} || Time.now.utc")
     @start_date = Date.new(@date.year, @date.month, @date.day) 
+    @end_date = Date.new(@date.year, @date.month, @date.day) + 6 
+    
     @events = Event.plot(@user.id, @start_date, @start_date + 6)
     respond_to do |format|
       format.html 
