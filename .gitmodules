@@ -1,3 +1,6 @@
 [submodule "vendor/plugins/table_builder"]
   path = vendor/plugins/table_builder
   url = git://github.com/p8/table_builder.git  
+[submodule "vendor/plugins/weekly_builder"]
+  path = vendor/plugins/weekly_builder
+  url = git://github.com/dmix/weekly_builder.git
