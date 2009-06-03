@@ -8,11 +8,10 @@
   = @date.year
   = link_to "Next Week »", "/weekly/?start_date=#{@start_date + 7}?user_id=#{@user.id}"
   
-- weekly_calendar(@events, :date => @date, :include_24_hours => true) do |w|
+- weekly_calendar(@events, :date => @date, :include_24_hours => false) do |w|
   - w.week(:business_hours => params[:business_hours]) do |event|
     .dim
       = event.starts_at.strftime('%I:%M%p')
     = link_to truncate(event.name,35), event_path(event)
-
 
 
